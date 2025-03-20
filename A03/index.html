@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A03</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      li {
+        color: green;
+      }
+      .destaque {
+        color: blue;
+      }
+
+      #primeiro-pagrafo {
+        color: red;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 1px;
+      }
+
+      .container-item {
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="/A02/">A02</a>
+          </li>
+          <li>
+            <a href="/A03/">A03</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+
+    </aside>
+
+    <main>
+
+      <div style="width: 100vw;">
+        <div style="margin: auto; width: 100px;">
+          <img
+          width="100"
+          src="/A02/image.jpg"
+          alt="Estudante de desenvolvimento web com um notebook falando sobre HTML e CSS"
+          />
+        </div>
+      </div>
+      <h1 class="destaque">A03</h1>
+
+      <p id="primeiro-pagrafo">
+        Lorem <mark style="background-color: rgb(203, 221, 114);">ipsum</mark> <span style="color: red; border: 1px solid red; display: block; background-color: rgb(203, 221, 114);">dolor</span> sit amet consectetur, adipisicing elit. Quod recusandae ad
+        vel. Architecto ullam commodi officia, <div style="border: 1px solid red; display: inline; background-color: rgb(203, 221, 114);">nisi</div> libero laboriosam earum repellat
+        minima amet, <b>totam</b> sunt <strong>dolorum</strong> consequatur <i>iste</i>, aliquid <em>aspernatur</em>?
+      </p>
+
+      <a href="/A02/">
+        <div style="width: 30px; height: 30px; background: green; border-radius: 100%; position:fixed; right: 20px; bottom: 20px;"></div>
+      </a>
+
+
+      <p>
+        Lorem ipsum <span style="color: red; border: 1px solid red; display: block;">dolor</span> sit amet consectetur, adipisicing elit. Quod recusandae ad
+        vel. Architecto ullam commodi officia, <div style="border: 1px solid red; display: inline;">nisi</div> libero laboriosam earum repellat
+        minima amet, totam sunt dolorum consequatur iste, aliquid aspernatur?
+      </p>
+
+
+      <p>
+        Lorem ipsum <span style="color: red; border: 1px solid red; display: block;">dolor</span> sit amet consectetur, adipisicing elit. Quod recusandae ad
+        vel. Architecto ullam commodi officia, <div style="border: 1px solid red; display: inline;">nisi</div> libero laboriosam earum repellat
+        minima amet, totam sunt dolorum consequatur iste, aliquid aspernatur?
+      </p>
+      <div class="container">
+        <div class="container-item"></div>
+        <div class="container-item"></div>
+        <div class="container-item"></div>
+        <div class="container-item"></div>
+        <div class="container-item" style="background-color: red;"></div>
+
+      </div>
+    </main>
+
+    <footer>
+      <h2>Contato</h2>
+      <form onsubmit="alert('Formulário submetido')" method="GET">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Apagar">
+      </form>
+      Copyright (C) 2025
+    </footer>
+  </body>
+</html>
